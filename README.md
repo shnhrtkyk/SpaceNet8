@@ -26,7 +26,7 @@ Follow these steps to prepare data for training and validation.
         - `{AOI}/annotations/prepped_cleaned/buildings_{x}_{y}_{id}.shp`  
 
 2. Create training and validation masks from the geojsons to use during training and validation.  
-`python baseline/data_prep/create_masks.py --root_dir /path/to/spacenet8/aws/data/download --aoi_dirs Germany_Training_Public Louisiana-East_Training_Public`
+`python baseline/data_prep/create_masks.py --root_dir /mnt/data --aoi_dirs Germany_Training_Public Louisiana-East_Training_Public`
 
     Four masks are generated during this process:  
         - binary building mask (0 non-building, 1 building)  
