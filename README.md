@@ -40,7 +40,7 @@ Follow these steps to prepare data for training and validation.
     This will create a csv file with filepaths to training images and labels and csv file with filepaths to validation images. It will do a random train/val split. These csvs are used by the dataloader during training. 
 
 ### Train/Validate Foundation Features Network  
-`python baseline/train_foundation_features.py --train_csv /path/to/train.csv --val_csv /path/to/val.csv --save_dir /path/to/save/directory/foundation --model_name resnet34 --lr 0.0001 --batch_size 2 --n_epochs 50 --gpu 0`
+`python baseline/train_flood.py --train_csv /mnt/data/sn8_data_train.csv --val_csv /mnt/data/sn8_data_val.csv --save_dir /mnt/save/ --model_name resnet34_siamese --lr 0.0001 --batch_size 12 --n_epochs 50 --gpu 0`
 
 ### Inference with Foundation Features Network  
 1. Write prediction tiffs to be used for postprocessing and generating the submission .csv  
