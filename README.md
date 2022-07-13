@@ -8,7 +8,7 @@ Detecting flooded roads and buildings. Predicting road speed.
 `nvidia-docker build -t sn8/baseline:1.0 /path/to/sn8_baseline/docker`
 
 3. Create and run the container (mount volumes to access your data, etc. see https://docs.docker.com/engine/reference/commandline/run/ for options)  
-`sudo nvidia-docker run -it --gpus all -v ~/SpaceNet8/:/mnt --rm sn8/baseline:1.0 bash`
+`sudo nvidia-docker run -it --gpus all -v ~/SpaceNet8/:/mnt --shm-size=32g --rm sn8/baseline:1.0 bash`
 
 
 ### Data Preparation
