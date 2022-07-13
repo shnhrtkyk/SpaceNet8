@@ -15,7 +15,7 @@ Detecting flooded roads and buildings. Predicting road speed.
 Follow these steps to prepare data for training and validation. 
 
 1. Clean the geojson labels and add speed values to the roads based on road type, number of lanes, and surface type.  
-`python baseline/data_prep/geojson_prep.py --root_dir /path/to/spacenet8/aws/data/download --aoi_dirs Germany_Training_Public Louisiana-East_Training_Public`
+`python baseline/data_prep/geojson_prep.py --root_dir /mnt/data/ --aoi_dirs Germany_Training_Public Louisiana-East_Training_Public`
 
 
     The cleaning step here also catches geometry problems, makes a single commom schema, and moves roads and buildings to seperate geojsons/shps. It will output a few additional files that are used in the subsequent step for creating image masks. The following new files will be written to the AOI annotations directory:  
