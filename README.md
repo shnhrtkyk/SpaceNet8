@@ -35,7 +35,7 @@ Follow these steps to prepare data for training and validation.
         - 4-channel flood mask  
 
 3. Create a random train/val split to train the models on
-`python baseline/data_prep/generate_train_val_test_csvs.py --root_dir /path/to/spacenet8/aws/data/download --aoi_dirs Germany_Training_Public Louisiana-East_Training_Public --out_csv_basename sn8_data --val_percent 0.15 --out_dir /path/to/output/folder/for/train/val/csvs`
+`python baseline/data_prep/generate_train_val_test_csvs.py --root_dir /mnt/data/ --aoi_dirs Germany_Training_Public Louisiana-East_Training_Public --out_csv_basename sn8_data --val_percent 0.15 --out_dir /mnt/data/`
 
     This will create a csv file with filepaths to training images and labels and csv file with filepaths to validation images. It will do a random train/val split. These csvs are used by the dataloader during training. 
 
