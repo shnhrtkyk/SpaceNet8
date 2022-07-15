@@ -50,7 +50,7 @@ Follow these steps to prepare data for training and validation.
 `python baseline/foundation_eval.py --model_path /path/to/saved/foundation/best_model.pth --in_csv /path/to/val/or/test.csv --save_fig_dir /path/to/output/foundation/eval_test/pngs --gpu 0 --model_name resnet34`  
 
 ### Train/Validate Flood Features Network  
-`python baseline/train_flood.py --train_csv /path/to/train.csv --val_csv /path/to/val.csv --save_dir /path/to/save/directory/flood --model_name resnet34_siamese --lr 0.0001 --batch_size 2 --n_epochs 50 --gpu 0`  
+`python baseline/train_flood.py --train_csv /mnt/data/sn8_data_train.csv --val_csv /mnt/data/sn8_data_val.csv --save_dir /mnt/save/ --model_name resnet34_siamese --lr 0.0001 --batch_size 2 --n_epochs 50 --gpu 0`  
 
 ### Inference With Flood Features Network
 1. Write prediction tiffs to be used for postprocessing and generating the submission .csv  
