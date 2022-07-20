@@ -44,7 +44,8 @@ Follow these steps to prepare data for training and validation.
 
 ### Inference with Foundation Features Network  
 1. Write prediction tiffs to be used for postprocessing and generating the submission .csv  
-`python baseline/foundation_eval.py --model_path /path/to/saved/foundation/best_model.pth --in_csv /path/to/val/or/test.csv --save_preds_dir /path/to/output/foundation/eval_test --gpu 0 --model_name resnet34`  
+`python baseline/foundation_eval.py --model_path /mnt/save/resnet34_lr1.00e-04_bs1_15-07-2022-02-21/best_model.pth --in_csv /mnt/data/sn8_data_val.csv --save_preds_dir /mnt/output/foundation/eval --gpu 0 --model_name resnet34
+`  
 
 2. Write prediction .pngs for visual inspection of predictions  
 `python baseline/foundation_eval.py --model_path /path/to/saved/foundation/best_model.pth --in_csv /path/to/val/or/test.csv --save_fig_dir /path/to/output/foundation/eval_test/pngs --gpu 0 --model_name resnet34`  
